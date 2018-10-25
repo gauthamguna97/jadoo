@@ -1,6 +1,6 @@
 
 ```
-> cd demo_app_react_redux
+> cd jadoo
 > npm install
 > npm start
 ```
