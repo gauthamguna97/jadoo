@@ -10,7 +10,7 @@ class VerticalList extends Component {
       console.log(item.image)
       return (
         <li key={item.name} style={Style.vertical} >
-          <Link to="/">
+          <Link to={`/${item.name}`}>
             <div style={Style.verticalmerge}>
               <span style={Style.verticalIcon}>
                 <img style={Style.verticalImage} src={item.image} />

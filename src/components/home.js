@@ -11,7 +11,9 @@ export default class HomePage extends Component {
 
     return (
       <div style={Style.home}>
-        <SearchBar />
+        <Link to={`/search`}>
+          <SearchBar />
+        </Link>
         <VerticalList />
       </div>
     );
