@@ -1,6 +1,6 @@
-
 ```
-> cd demo_app_react_redux
+> git clone https://github.com/gauthamguna97/jadoo.git
+> cd jadoo
 > npm install
 > npm start
 ```
