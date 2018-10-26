@@ -11,7 +11,6 @@ export default class SearchBar extends Component{
               <input style={Style.search} type="text" id="searchtxt" placeholder="Ask me anything..." />
             </div>
             <span style={Style.searchicon}>
-              <span style={Style.searchImage}></span>
             </span>
           </div>
         </div>

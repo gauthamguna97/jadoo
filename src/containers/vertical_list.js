@@ -7,7 +7,6 @@ class VerticalList extends Component {
 
   renderList(event){
     return this.props.verticalList.map(item => {
-      console.log(item.image)
       return (
         <li key={item.name} style={Style.vertical} >
           <Link to={`/${item.name}`}>
