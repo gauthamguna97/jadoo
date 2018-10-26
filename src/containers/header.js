@@ -1,23 +1,23 @@
 import React,{Component} from 'react'
 import Style from './css/style.js'
-
+import {Link} from 'react-router-dom'
 export default class Header extends Component {
     render(){
         return(
           <div style={Style.header}>
             <div style={Style.headerMain}>
               <div style={Style.headerTable}>
-                <div style={Style.headerbutton}>
+                <Link to="/SideMenu" style={Style.headerbutton}>
                   <div style={Style.headermenu}></div>
                   <div style={Style.headermenu}></div>
                   <div style={Style.headermenu}></div>
-                </div>
+                </Link>
                 <div style={Style.headermiddle}>
                   <div style={Style.headername}>Jadoo</div>
                 </div>
-                <span style={Style.headericon}>
+                <Link to="/Login" style={Style.headericon}>
                   <span style={Style.headerlogin}></span>
-                </span>
+                </Link>
               </div>
             </div>
           </div>

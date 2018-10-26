@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
-import Homepage from './components/home.js';
-import Direct from './components/direct.js';
-
+import Homepage from './components/home.js'
+import Direct from './components/direct.js'
+import SideMenu from './components/sidemenu.js'
+import Login from './components/login.js'
 import SearchBar from './containers/search_bar.js'
 
 import reducers from './reducers';
@@ -18,8 +19,9 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/search" component={SearchBar}/>
-          <Route path="/:id" component={Direct}/>
+          <Route path="/SideMenu" component={SideMenu} />
+          <Route path="/search" component={SearchBar} />
+          <Route path="/:id" component={Direct} />
           <Route path="/" component={Homepage} />
         </Switch>
       </div>

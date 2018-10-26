@@ -29,13 +29,13 @@ function mapStateToProps({VerticalList},ownprops){
       index=1
       break;
     case 'Movies':
-      index=2
+      index=2;
       break;
     case 'Doctors':
-      index=3
+      index=3;
       break;
     case 'Jobs':
-      index=4
+      index=4;
       break;
   }
   return{
