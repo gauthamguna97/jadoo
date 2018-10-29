@@ -3,13 +3,15 @@ import Style from "./css/style.js"
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom'
 
+import Actions from '../actions/index.js'
+
 class VerticalList extends Component {
 
   renderList(event){
     return this.props.verticalList.map(item => {
       return (
         <li key={item.name} style={Style.vertical} >
-          <Link to={`/${item.name}`}>
+          <Link to={`${item.link}`}>
             <div style={Style.verticalmerge}>
               <span style={Style.verticalIcon}>
                 <img style={Style.verticalImage} src={item.image} />

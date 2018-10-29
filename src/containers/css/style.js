@@ -7,6 +7,10 @@ export default {
     height : '10%',
     textAlign: 'center',
   },
+  backb : {
+    height : '50%',
+    width : '50%'
+  },
   verticalList : {
     margin: '0px',
     padding: '15px 0 5px',
