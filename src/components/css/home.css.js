@@ -19,7 +19,18 @@ export default {
       marginBottom: '5px',
       marginTop: '5px',
       boxSizing : 'border-box',
-      padding : '12 10 px'
+      padding : '12 10 px',
+      borderBottom: '3px solid #e4eaef'
+    },
+    rest : {
+      listStyleType : 'none',
+      display: 'table',
+      height : '200px',
+      width: '100%',
+      textAlign: 'left',
+      margin : ' 0 10 px',
+      boxSizing : 'border-box',
+      padding : '5px 0 0'
     },
     imagecell :{
       display : 'table-cell',
@@ -28,19 +39,23 @@ export default {
       height : '100%'
     },
     images : {
-      width : '40%',
-      height : '40%',
+      width : '50%',
+      height : '50%',
       borderRadius : '5px'
     },
     textcell:{
       display : 'table-cell',
       width : '50%',
-      borderBottom: '3px solid #e4eaef'
+      borderBottom: '3px solid #e4eaef',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace : 'nowrap',
+      padding : '0 0 10 0px'
     },
     heading : {
       width : '100%',
-      height : '35%',
-      fontSize : '40px',
+      height : '25%',
+      fontSize : '30px',
       display : 'block',
       padding : '0 0 5 0 px'
     },
@@ -48,8 +63,22 @@ export default {
       width : '100%',
       height : '20%',
       fontSize : '25px',
-      display : 'block'
+      display : 'block',
+      color: '#788898'
     },
+    rating: {
+    display: 'block',
+    fontSize : '30px',
+    width : '15%',
+    height : '20%',
+    background: '#428b2c',
+    borderRadius: '3px',
+    textAlign: 'center',
+
+    color: '#fff',
+    fontWeight: '500'
+  },
+
     linkbutton : {
       display : 'table-cell',
       width : '20%',
@@ -57,7 +86,14 @@ export default {
     },
     linkin : {
       width : '30%',
-      height : '30%'
+      height : '30%',
+      display : 'block'
+    },
+    linkname : {
+      width : '50%',
+      height : '50%',
+      display : 'block',
+      textAlign : 'center'
     },
     footerelementmerge : {
       width:'100%',

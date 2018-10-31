@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import Header from '../containers/headersecond.js'
-import Fetch from '../actions/index.js'
+import {Fetch,FetchList} from '../actions/index.js'
 import Footer from '../containers/footer.js'
 import Style from './css/home.css.js'
 
@@ -11,6 +11,8 @@ class Direct extends Component{
   componentDidMount(){
     const {location,vid,id} = this.props.match.params ;
     console.log(location+" "+vid+" "+id);
+    console.log(this.props.Alert)
+    console.log(this.props.VerticalInfo)
     if(this.props.Alert == 'false'){
       this.props.Fetch('Restaurants',{location,vid,id});
     }
@@ -28,7 +30,7 @@ class Direct extends Component{
             <span style={Style.heading}>{item.catdname}</span>
             <span style={Style.description}>{item.description}</span>
           </div>
-          <Link to="/" style={Style.linkbutton}>
+          <Link to={`/Bangalore/${item.catdname}/nct-${item.n_catid}`} style={Style.linkbutton}>
             <img style={Style.linkin} src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/cmnarw.svg"></img>
           </Link>
         </li>

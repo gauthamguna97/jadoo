@@ -7,6 +7,7 @@ import promise from "redux-promise";
 
 import Homepage from './components/home.js'
 import Direct from './components/direct.js'
+import Restaurants from './components/restaurants.js'
 import SideMenu from './components/sidemenu.js'
 import Login from './components/login.js'
 import SearchBar from './containers/search_bar.js'
@@ -20,6 +21,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
+          <Route path="/:location/:type/nct-11263749" component={Restaurants} />
           <Route path="/:location/:vid/:id" component={Direct} />
           <Route path="/" component={Homepage} />
         </Switch>

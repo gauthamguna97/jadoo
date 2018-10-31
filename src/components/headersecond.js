@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import Style from './css/style.js'
 import {Link} from 'react-router-dom'
-import {browserHistory} from 'react-router'
 
 
 export default class Header2 extends Component {

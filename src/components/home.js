@@ -11,19 +11,10 @@ import Footer from '../containers/footer.js'
 
 
 class HomePage extends Component {
-  getHeader(e){
-    if(this.props.data){
-      console.log('data is ')
-      console.log(this.props.data)
-      return(
-        <Header />
-      )
-    }
-  }
   render() {
     return (
       <div style={Style.home}>
-        {this.getHeader()}
+        <Header />
         <Link to={`/search`}>
           <SearchBar />
         </Link>
