@@ -4,7 +4,7 @@ import Header from '../containers/headersecond.js'
 import {Fetch,FetchList} from '../actions/index.js'
 import Footer from '../containers/footer.js'
 import Style from './css/home.css.js'
-
+import './css/test.css'
 import {Link} from 'react-router-dom'
 class Direct extends Component{
 
@@ -33,6 +33,7 @@ class Direct extends Component{
           <Link to={`/Bangalore/${item.catdname}/nct-${item.n_catid}`} style={Style.linkbutton}>
             <img style={Style.linkin} src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/cmnarw.svg"></img>
           </Link>
+          <div className="hello">Hello</div>
         </li>
       );
     })
@@ -40,15 +41,15 @@ class Direct extends Component{
   render(){
     if(this.props.VerticalInfo == 'error'){
       return(
-        <div>Loading...</div>
+        <div className="fadein"></div>
       );
     } else {
       return(
-      <div>
-        <Header />
-        <div style={Style.empty} />
-        <ul style={Style.restaurantlist}>{this.renderList()}</ul>
-      </div>
+        <div className="fadein">
+          <Header />
+          <div style={Style.empty} />
+          <ul style={Style.restaurantlist}>{this.renderList()}</ul>
+        </div>
       )
     }
   }
